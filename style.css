@@ -1,0 +1,231 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 5px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 5px;
+  background-color: #0000ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.utilityBtn {
+  padding: 5px;
+  margin: 5px;
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0040ff;
+}
+
+.utilityBtn:hover {
+  background-color: #80ffff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#main-heading {
+  background-color: #202c33;
+  padding: 0.5rem;
+  color: #eeeeee;
+  flex: 1;
+}
+
+#two-box {
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+}
+
+#left-div {
+  background-color: #0b141a;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-div-heading {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #101a20;
+}
+
+#left-div-heading > button {
+  padding: 5px;
+  margin: auto 5px;
+  flex: 1;
+  height: 33px;
+}
+
+#left-div-heading > input,
+#commentorName,
+#question-subject {
+  padding: 5px;
+  margin: auto 5px;
+  flex: 2;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#question-description,
+#commentDescription {
+  padding: 5px;
+  margin: 5px 5px;
+  flex: 2;
+  height: 100px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#left-div-question-panel {
+  flex: 10;
+  background-color: #0b141a;
+  color: #e0e0e0;
+  overflow: auto;
+}
+
+#quesHeadingNode,
+#commentHeadingNode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  color: gold;
+  margin: auto 5px;
+  padding: 5px;
+  visibility: hidden;
+}
+
+#right-div {
+  background-color: #111b21;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#right-div-question-form {
+  margin: 100px auto auto auto;
+  padding: 50px 100px;
+  border-radius: 10px;
+  background-color: #202c33;
+  color: #e0e0e0;
+}
+
+#right-div-question-form > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+#right-div-question-form > p {
+  font-weight: bold;
+  margin: 5px;
+}
+
+#right-div-question-form-items > div {
+  margin: 5px;
+}
+
+#right-div-question-form-items > button {
+  margin: 5px;
+  border: none;
+}
+
+#right-div-question-resolve-form {
+  margin: 5px 5px;
+  background-color: #111b21;
+  flex-direction: column;
+  display: none;
+  color: #e0e0e0;
+  overflow: auto;
+}
+
+#question {
+  flex: 25%;
+  margin: 5px;
+}
+
+/* #right-div-question-panel {
+} */
+
+#right-div-question-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#commentUtilityBtnNode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.questionBtn {
+  flex: 1;
+}
+
+#response {
+  flex: 25%;
+  margin: 5px;
+}
+
+/* #right-div-response-panel {
+} */
+
+#add-response {
+  flex: 50%;
+  margin: 5px;
+}
+
+.dynamicNode {
+  /* background-color: #333446; */
+  background-color: #202c33;
+  color: #e0e0e0;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.dynamicNodeQues {
+  background-color: #182229;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}

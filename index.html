@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/560a066673.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Discussion App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main-heading">
+        <h1>Discussion Portal</h1>
+      </div>
+
+      <div id="two-box">
+        <div id="left-div">
+          <div id="left-div-heading">
+            <button id="newQuesFormBtn" class="btn">New Question Form</button>
+            <input
+              id="searchQues"
+              type="text"
+              placeholder="Search Questions..."
+            />
+          </div>
+          <div id="left-div-question-panel"></div>
+        </div>
+
+        <div id="right-div">
+          <div id="right-div-question-form">
+            <h2>Welcome to Discussion Portal !</h2>
+            <p>Enter a Subject and Question to get started</p>
+            <form id="right-div-question-form-items">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  id="question-subject"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  name="question-description"
+                  id="question-description"
+                  cols="30"
+                  rows="10"
+                  placeholder="Ouestion"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn"
+                id="right-div-question-form-items-submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div id="right-div-question-resolve-form">
+            <div id="question">
+              <h2>Question</h2>
+              <div id="right-div-question-panel"></div>
+              <div id="right-div-question-buttons">
+                <button id="upvoteBtn" class="questionBtn btn">Upvote</button>
+                <button id="downvoteBtn" class="questionBtn btn">
+                  Downvote
+                </button>
+                <button id="resolveBtn" class="questionBtn btn">Resolve</button>
+              </div>
+            </div>
+            <div id="response">
+              <h2>Response</h2>
+              <div id="right-div-response-panel"></div>
+            </div>
+            <div id="add-response">
+              <h2>Add Response</h2>
+              <div>
+                <input
+                  id="commentorName"
+                  type="text"
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div>
+                <textarea
+                  name="response-description"
+                  id="commentDescription"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter Comment"
+                ></textarea>
+              </div>
+              <button id="addCommentBtn" type="submit" class="btn">
+                Add Comment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
